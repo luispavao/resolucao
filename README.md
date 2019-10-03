@@ -1,0 +1,2 @@
+# resolucao
+Script avaliação semantx
