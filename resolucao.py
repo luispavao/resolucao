@@ -7,6 +7,7 @@ df = spark.read.text("/FileStore/tables/access_log_Aug95")
 df2 = spark.read.text("/FileStore/tables/access_log_Jul95")
 
 df = df.union(df2)
+df.cache()
 
 #definições das expressões regulares
 host_regex = r'(^\S+\.[\S+\.]+\S+)\s'
